@@ -8,6 +8,25 @@
 # C02XHCNEJG5J:~ jonesth6$ which 7za
 
 
+/usr/bin/gunzip -c foo.tar.gz | /usr/bin/tar xopf -
+
+/sbin/md5
+
+
+for f in file1 file2 file3 file5
+do
+ echo "Processing $f"
+ # do something on $f
+ /usr/local/bin/7za h "$f"
+ /sbin/md5 "$f"
+ /usr/local/bin/7za a "$f_AES256.zip" * -m0=Copy -r -p"Th3Master!"
+ /sbin/md5 "$f_AES256.zip" 
+done
+
+
+
+
+
 /usr/local/bin/7za
 
 
